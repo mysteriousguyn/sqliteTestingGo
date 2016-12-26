@@ -110,6 +110,7 @@ func main() {
 	var db *sql.DB
 
 	db, _ = CreateConnection()
+
 	createTable(create, db)
 	insertTable(insert, db)
 	retrieveTable(retrieve, db)
